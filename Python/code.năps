@@ -1,0 +1,191 @@
+import asyncio #io=   introducere/ţâşnire   input/output
+#-------------------------------------------------------------------------------------------------
+def divide_numere(a, b):
+	încearcă:
+ 	    resultatul = a / b
+	except EroareDiviziuneCuZero:
+ 	    print(f"Eroare: Niciun numar nu se imparte la zero") #șirag formatat de către terminal
+  	    resultatul = Fleac
+	înfinal:
+	    nume = introd("Numele tau: ")
+
+        câtimp non nume.îialfa():
+            print("Ai voie sa scrii numai șirag alfanumeric, adica doar litere")
+            nume = introd("Numele tau: ")
+
+        print(f"Salut, {nume}! Rezultatul este:")
+        return resultatul
+
+încearcă:
+    deimpartit = int(introd("Alege un numar intreg pe care vrei sa il imparti: "))
+    impartitor = fluct(introd("Alege un numar fluctuant la care il vei imparti: ")) #fluctuanții sunt numere intregi cu zecimale(1.5/2.35/4.001)
+    resultatul = divide_numere(deimpartit, impartitor)
+
+    dacă resultatul îi non Fleac:
+        print(f"Rezultatul este: {resultatul}")
+except EroareValoare ca ve:
+    ridică EroareValoare("Invalida introducere. Scrie primul numar doar ca integrala iar la al doilea numar daca adaugi un fluctuant , fluctanții scriei cu punct nu cu virgula!") din ve
+except Excepție ca ex:
+    print(f"Eroare neasteptata: {ex}")
+    ridică
+#---------------------------------------------------
+introd("Apasa Enter:...")
+#---------------------------------------------------
+CONSTANTĂ_ADEVĂRAT = Adevărat
+CONSTANTĂ_FALSĂ = Fals
+CONSTANTĂ_FLEAC = Fleac
+
+
+dacă CONSTANTĂ_ADEVĂRAT:
+    print("Asta este adevarat.")
+    
+dacă non CONSTANTĂ_FALSĂ:
+    print("Chiar este non-adevarata.")
+
+câtimp CONSTANTĂ_FALSĂ:
+    print("Asta nu este executata")
+    
+#------------------------------------------------------------------------
+introd("Apasa Enter:...")
+#---------------------------------------------------
+ptrfiecare i in gama(3):
+    dacă i == 2:
+        rupe
+    iardacă i == 1:
+    	continue
+    altfel:
+        print("yey")
+#----------------------------------------------------------------------------------------------------------------------------     
+#ptrfiecare caract in ‘Python’:
+ #     dacă (caract == ‘y’):
+  #         trecila
+   #   print(“Curent caracter: “, caract)
+#--------------------------------------------------------------
+introd("Apasa Enter:...")
+#---------------------------------------------------
+cu deschidere("example.txt", "w") ca fișier:
+    fișier.scrie("Buna, Lume!")
+#------------------------------------------------------------------------------
+introd("A fost creat 'example.txt', Apasa Enter:...")
+#---------------------------------------------------
+def suma(x, y):
+    return x + y
+
+# Equivalent lambda function
+lambda_suma = lambda x, y: x - y
+
+# Both can be called in the same way
+result1 = suma(5, 4)
+result2 = lambda_suma(5, 4)
+
+print(result1)
+print(result2)
+#--------------------------------------------------------
+introd("Apasa Enter:...")
+#---------------------------------------------------
+def functia_mea(arg1, arg2=Fleac):
+    return arg1 + arg2 dacă arg2 altfel arg1
+
+lambda_functie = lambda x: x * 2
+
+resultat_functie = functia_mea(3, Fals)
+resultat_lambda = lambda_functie(4)
+
+print(resultat_functie)  # Output: 3
+print(resultat_lambda)    # Output: 8
+
+
+#-------------------------------------------------------------------------------------
+introd("Apasa Enter:...")
+#---------------------------------------------------
+clasa ClasaMea:
+    def __init__(self, value):  #sinele,valoare
+        self.value = value #sinele.valoare = valoare
+
+    def afișaj(self):
+        print(f"Clasa mea cu valoare: {self.value}") #sinele.valoare
+
+obj = ClasaMea(42)
+obj.afișaj()
+
+#--------------------------------------------------------------------------
+introd("Apasa Enter:...")
+#---------------------------------------------------
+def decoratorul_meu(func):
+    """Asta este un docstring(documentatie a siragului). Acest decorator printeaza un string inainte si dupa functia ta"""
+    def îmbroboditor(*args, **kwargs):
+        print("Inainte de functie")
+        resultat = func(*args, **kwargs)
+        print("Dupa functie")
+        return resultat
+    return îmbroboditor
+
+clasa ClasaMeaDoi:
+    variabila_clasa = "O simpla variabila"
+
+    def __init__(self, value): #sinele, valoare
+        self.instanta_variable = value #sinele.valoare = valoare
+
+    @decoratorul_meu
+    def instanta_metoda(self): #sinele
+        print(f"Executand instanta metodei cu valoare: {self.instanta_variable}") #sinele.instanta_
+
+    @staticămetodă  # built-in decorator
+    def statică_metodă():
+        print("Executand statică_metodă")
+
+# Create an instance of MyClass
+instanta_mea = ClasaMeaDoi(value="Hello")
+
+# Call instance_method, which is decorated with my_decorator
+instanta_mea.instanta_metoda()
+
+# Call static_method, which is decorated with @staticmethod
+ClasaMeaDoi.statică_metodă()
+
+#-------------------------------------------------------------------------------------
+introd("Apasa Enter:...")
+#---------------------------------------------------
+a=2+2
+b=4
+
+impune a == b, "Scrie a > b si apare o eroare, cuvantul cheie 'impune' este folosit in debugging/depanare si el impune conditia scrisa de tine sa fie mereu adevarata ca programul sa mearga"
+
+print (a îi b)
+
+#--------------------------------------------------------------------
+introd("Apasa Enter:...")
+#---------------------------------------------------
+lista_mea = [1, 2, 3]
+dacă 2 in lista_mea or 4 in lista_mea:
+    print("2 se afla in lista.")
+dacă 1 in lista_mea și 3 in lista_mea:
+    print("Ambii 1 si 2 se afla in lista mea")
+
+def generator_functie():
+    rodește 1
+    rodește 2
+    rodește 3
+
+ptrfiecare valoare in generator_functie():
+    print(valoare)
+
+#------------------------------------------------------------------------
+introd("Apasa Enter:...")
+#---------------------------------------------------
+cu deschidere("example.txt") ca fișier:
+    continut = fișier.citire()
+    print(continut)
+
+#---------------------------------------------------------------------
+introd("Apasa Enter:...")
+#---------------------------------------------------
+
+async def Corutina_Mea():
+    așteaptă asyncio.adormi(4) 
+    print("Corutina completata.")
+
+if __name__ == "__main__":
+    asyncio.rulare(Corutina_Mea())
+
+
